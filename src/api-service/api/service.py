@@ -5,7 +5,6 @@ Cheese App API Service
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 import math
-import os
 from api.utils import power
 
 # Setup FastAPI app
