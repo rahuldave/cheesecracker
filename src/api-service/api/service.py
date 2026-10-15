@@ -44,3 +44,9 @@ async def calculate_euclidean_distance(x: float = 1, y: float = 2):
         "distance": result,
         "message": "This is a very long line that exceeds 120 characters blah",
     }
+
+
+@app.get("/add/")
+async def add_numbers(x: float = 0, y: float = 0):
+    """Add two numbers"""
+    return {"result": x + y}
